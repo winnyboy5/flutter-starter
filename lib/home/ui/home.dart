@@ -2,7 +2,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:feather_icons/feather_icons.dart';
 import 'package:starter/feed/ui/feed.dart';
 import 'package:starter/utils/widgets/app_strings.dart';
 import 'package:starter/utils/widgets/custom_app_bar.dart';
@@ -59,19 +59,19 @@ class HomePage extends HookWidget {
             items: <BottomNavyBarItem>[
               BottomNavyBarItem(
                   title: Text('Home'),
-                  icon: Icon(FontAwesomeIcons.home),
+                  icon: Icon(FeatherIcons.home),
                   textAlign: TextAlign.center,
                   inactiveColor: Theme.of(context).accentColor,
                   activeColor: ColorSets.colorBrand1),
               BottomNavyBarItem(
                   title: Text('Card Wallet'),
-                  icon: Icon(FontAwesomeIcons.layerGroup),
+                  icon: Icon(FeatherIcons.layers),
                   textAlign: TextAlign.center,
                   inactiveColor: Theme.of(context).accentColor,
                   activeColor: ColorSets.colorBrand1),
               BottomNavyBarItem(
                   title: Text('Exchange'),
-                  icon: Icon(FontAwesomeIcons.sync),
+                  icon: Icon(FeatherIcons.refreshCcw),
                   textAlign: TextAlign.center,
                   inactiveColor: Theme.of(context).accentColor,
                   activeColor: ColorSets.colorBrand1),
@@ -79,13 +79,13 @@ class HomePage extends HookWidget {
                   title: Text(
                     'Broadcast',
                   ),
-                  icon: Icon(FontAwesomeIcons.broadcastTower),
+                  icon: Icon(FeatherIcons.radio),
                   textAlign: TextAlign.center,
                   inactiveColor: Theme.of(context).accentColor,
                   activeColor: ColorSets.colorBrand1),
               BottomNavyBarItem(
                   title: Text('Messages'),
-                  icon: Icon(FontAwesomeIcons.comment),
+                  icon: Icon(FeatherIcons.messageCircle),
                   textAlign: TextAlign.center,
                   inactiveColor: Theme.of(context).accentColor,
                   activeColor: ColorSets.colorBrand1),

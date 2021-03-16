@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:feather_icons/feather_icons.dart';
 import 'package:starter/utils/widgets/card_image_object.dart';
 
 import 'package:starter/utils/widgets/style.dart';
@@ -25,7 +25,7 @@ class FeedPage extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         prefixIcon: Icon(
-                          FontAwesomeIcons.search,
+                          FeatherIcons.search,
                           color: Colors.grey,
                           size: FontValues.fz4,
                         ),
@@ -40,7 +40,7 @@ class FeedPage extends StatelessWidget {
                   width: 20,
                 ),
                 Icon(
-                  FontAwesomeIcons.plusCircle,
+                  FeatherIcons.plusCircle,
                   color: Colors.grey[800],
                   size: 20,
                 )
@@ -98,7 +98,8 @@ class FeedPage extends StatelessWidget {
     );
   }
 
-  Widget makeStory({context, required storyImage, userImage, required userName}) {
+  Widget makeStory(
+      {context, required storyImage, userImage, required userName}) {
     return AspectRatio(
       aspectRatio: 3.6 / 2,
       child: Container(
@@ -206,7 +207,7 @@ class FeedPage extends StatelessWidget {
               ),
               IconButton(
                 icon: Icon(
-                  FontAwesomeIcons.ellipsisV,
+                  FeatherIcons.moreVertical,
                   size: 20,
                   color: Colors.grey[500],
                 ),
@@ -289,7 +290,7 @@ class FeedPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Icon(
-              FontAwesomeIcons.heart,
+              FeatherIcons.heart,
               color: isActive ? ColorSets.colorBrand3 : Colors.grey,
               size: 23,
             ),
@@ -318,7 +319,7 @@ class FeedPage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Icon(FontAwesomeIcons.comment, color: Colors.grey, size: 18),
+            Icon(FeatherIcons.messageCircle, color: Colors.grey, size: 18),
             SizedBox(
               width: 5,
             ),
@@ -343,7 +344,7 @@ class FeedPage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Icon(FontAwesomeIcons.share, color: Colors.grey, size: 18),
+            Icon(FeatherIcons.share, color: Colors.grey, size: 18),
             SizedBox(
               width: 5,
             ),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class CardImageObject extends StatelessWidget {
-  final String profileImage;
-  final String companyLogo;
-  final double imageSize;
-  final MainAxisAlignment alignParam;
+  final String? profileImage;
+  final String? companyLogo;
+  final double? imageSize;
+  final MainAxisAlignment? alignParam;
 
   CardImageObject(
       {this.profileImage, this.companyLogo, this.imageSize, this.alignParam});
@@ -12,7 +12,7 @@ class CardImageObject extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: alignParam,
+      mainAxisAlignment: alignParam!,
       children: <Widget>[
         ClipRRect(
             borderRadius: BorderRadius.only(
@@ -22,7 +22,7 @@ class CardImageObject extends StatelessWidget {
             child: Container(
               color: Colors.white,
               child: Image.asset(
-                companyLogo,
+                companyLogo!,
                 width: imageSize,
                 height: imageSize,
                 fit: BoxFit.cover,
@@ -36,7 +36,7 @@ class CardImageObject extends StatelessWidget {
             child: Container(
               color: Colors.white,
               child: Image.asset(
-                profileImage,
+                profileImage!,
                 width: imageSize,
                 height: imageSize,
                 fit: BoxFit.cover,

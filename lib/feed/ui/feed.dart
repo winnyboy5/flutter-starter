@@ -98,7 +98,7 @@ class FeedPage extends StatelessWidget {
     );
   }
 
-  Widget makeStory({context, storyImage, userImage, userName}) {
+  Widget makeStory({context, required storyImage, userImage, required userName}) {
     return AspectRatio(
       aspectRatio: 3.6 / 2,
       child: Container(
@@ -137,14 +137,14 @@ class FeedPage extends StatelessWidget {
   }
 
   Widget makeFeed(
-      {context,
-      userName,
+      {required context,
+      required userName,
       userImage,
-      feedTime,
-      feedText,
+      required feedTime,
+      required feedText,
       feedImage,
       brandImage,
-      role}) {
+      required role}) {
     return Container(
       margin: EdgeInsets.only(bottom: 20),
       padding: EdgeInsets.all(15.0),
@@ -277,7 +277,7 @@ class FeedPage extends StatelessWidget {
     );
   }
 
-  Widget makeLikeButton({isActive}) {
+  Widget makeLikeButton({required isActive}) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       decoration: BoxDecoration(

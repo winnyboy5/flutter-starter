@@ -11,7 +11,7 @@ import 'package:starter/utils/widgets/style.dart';
 final navProvider = StateProvider((ref) => 0);
 
 class HomePage extends HookWidget {
-  HomePage({Key key}) : super(key: key);
+  HomePage({Key? key}) : super(key: key);
 
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white);
